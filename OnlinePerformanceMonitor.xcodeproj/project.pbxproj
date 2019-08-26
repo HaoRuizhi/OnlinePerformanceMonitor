@@ -15,6 +15,7 @@
 		F65BA1622313C3C1001ACB08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F65BA1612313C3C1001ACB08 /* main.m */; };
 		F65BA16C2313C3C1001ACB08 /* OnlinePerformanceMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F65BA16B2313C3C1001ACB08 /* OnlinePerformanceMonitorTests.m */; };
 		F65BA1772313C3C1001ACB08 /* OnlinePerformanceMonitorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F65BA1762313C3C1001ACB08 /* OnlinePerformanceMonitorUITests.m */; };
+		F65BA1862313C3F3001ACB08 /* MonitorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F65BA1852313C3F3001ACB08 /* MonitorUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		F65BA1722313C3C1001ACB08 /* OnlinePerformanceMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlinePerformanceMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F65BA1762313C3C1001ACB08 /* OnlinePerformanceMonitorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnlinePerformanceMonitorUITests.m; sourceTree = "<group>"; };
 		F65BA1782313C3C1001ACB08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F65BA1842313C3F3001ACB08 /* MonitorUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MonitorUtil.h; sourceTree = "<group>"; };
+		F65BA1852313C3F3001ACB08 /* MonitorUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonitorUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				F65BA1532313C3C0001ACB08 /* AppDelegate.m */,
 				F65BA1552313C3C0001ACB08 /* ViewController.h */,
 				F65BA1562313C3C0001ACB08 /* ViewController.m */,
+				F65BA1842313C3F3001ACB08 /* MonitorUtil.h */,
+				F65BA1852313C3F3001ACB08 /* MonitorUtil.m */,
 				F65BA1582313C3C0001ACB08 /* Main.storyboard */,
 				F65BA15B2313C3C1001ACB08 /* Assets.xcassets */,
 				F65BA15D2313C3C1001ACB08 /* LaunchScreen.storyboard */,
@@ -264,6 +269,7 @@
 			files = (
 				F65BA1572313C3C0001ACB08 /* ViewController.m in Sources */,
 				F65BA1622313C3C1001ACB08 /* main.m in Sources */,
+				F65BA1862313C3F3001ACB08 /* MonitorUtil.m in Sources */,
 				F65BA1542313C3C0001ACB08 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +380,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -426,6 +433,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

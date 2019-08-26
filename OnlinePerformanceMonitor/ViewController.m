@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MonitorUtil.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSTimer *timer = [NSTimer timerWithTimeInterval:5 repeats:YES block:^(NSTimer * _Nonnull timer) {
+        NSLog(@"CPU使用率为 %d memory 使用率为 %ld", [[MonitorUtil shareMonitorUtil] cpuUsage], [[MonitorUtil shareMonitorUtil] memoryUsage]);
+    }];
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+    
+    [[MonitorUtil shareMonitorUtil] startMonitoring];
 }
 
 
